@@ -1,0 +1,8 @@
+#note {
+  position: absolute;
+  top: 1%;
+  left: 40%;
+  z-index: 1;
+  font-family: Sans-serif;
+  color: #2EAFAC;
+}

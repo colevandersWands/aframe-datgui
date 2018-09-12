@@ -1,0 +1,14 @@
+#note Use the Dat.GUI panel to adjust the scale of the sphere!
+
+script.
+  //
+
+a-scene(vr-dat-gui dat-gui-controller="query: [hand-controls]")
+  a-entity#leftControl(hand-controls='left')
+  a-entity#rightControl(hand-controls='right')
+  a-box#box(color='#4CC3D9', position='-1 0.5 -3', rotation='0 45 0')
+  a-sphere#sphere(color='#EF2D5E', position='0 1.25 -5', radius='1.25', )
+  a-cylinder(color='#FFC66E', height='1.5', position='1 0.75 -3', radius='0.5')
+  a-plane(color='#7BC8A4', height='4', position='0 0 -4', rotation='-90 0 0', width='4')
+  a-entity(camera="userHeight: 1.6" look-controls)
+  a-sky(color='#ECECEC')

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A-Frame & VR Dat.GUI Component Example</title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
+<script src="https://vr.cwervo.com/js/vr/datguivr.min.js"></script>
+
+<script src="https://unpkg.com/aframe-event-set-component@^3.0.0/dist/aframe-event-set-component.min.js"></script>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div id="note">Use the Dat.GUI panel to adjust the scale of the sphere!</div>
+<script>
+  //
+  
+</script>
+<a-scene vr-dat-gui="vr-dat-gui" dat-gui-controller="query: [hand-controls]">
+  <a-entity id="leftControl" hand-controls="left"></a-entity>
+  <a-entity id="rightControl" hand-controls="right"></a-entity>
+  <a-box id="box" color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
+  <a-sphere id="sphere" color="#EF2D5E" position="0 1.25 -5" radius="1.25"></a-sphere>
+  <a-cylinder color="#FFC66E" height="1.5" position="1 0.75 -3" radius="0.5"></a-cylinder>
+  <a-plane color="#7BC8A4" height="4" position="0 0 -4" rotation="-90 0 0" width="4"></a-plane>
+  <a-entity camera="userHeight: 1.6" look-controls="look-controls"></a-entity>
+  <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
